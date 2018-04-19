@@ -1,6 +1,6 @@
 let http = require("http");
 const PORT = 7000
-const PORT2 = 7500
+const PORT_TWO = 7500
 
 let server = http.createServer ((req, res) => {
 
@@ -13,12 +13,12 @@ server.listen (PORT, () => {
 })
 
 
-let server2 = http.createServer ((req, res) => {
+let serverTwo = http.createServer ((req, res) => {
 
     
     res.end("I will tell you mean things now!")
 })
 
-server2.listen (PORT2, () => {
+serverTwo.listen (PORT_TWO, () => {
     console.log("mean things!!!");
 })
